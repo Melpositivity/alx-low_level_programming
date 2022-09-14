@@ -3,18 +3,12 @@
 
 
 /**
- *
- *  * main - prints _putchar
- *
- *   *
- *
- *    * Description: prints _putchar
- *
- *     *
- *
- *      * Return: 0 (Success)
- *
- *       */
+
+ * main - print putchar
+
+ * Return: always 0
+
+ */
 
 
 
@@ -22,24 +16,27 @@ int main(void)
 
 {
 
-		char text[9] = "_putchar";
+	_putchar('_');
 
-			int i = 0;
+	_putchar('p');
+
+	_putchar('u');
+
+	_putchar('t');
+
+	_putchar('c');
+
+	_putchar('h');
+
+	_putchar('a');
+
+	_putchar('r');
+
+	_putchar('\n');
 
 
 
-				for (i = 0; i < 8; i++)
-
-						{
-
-									_putchar(text[i]);
-
-										}
-
-					_putchar('\n');
+	return (0);
 
 
 
-						return (0);
-
-}
