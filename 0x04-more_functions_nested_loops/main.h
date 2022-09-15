@@ -3,7 +3,7 @@
 
 /**
  * main - header file for protoypes
- * void protoypes (void)
+ * oid protoypes (void)
  * int protoypes (int)
  */
 
@@ -32,3 +32,4 @@ int _isdigit(int);
 int mul(int, int);
 
 #endif /* MAIN_H */
+
