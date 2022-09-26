@@ -22,7 +22,6 @@ char *_strchr(char *s, char c)
 			else if (s[index] == '\0')
 				break;
 		}
-
 	return (NULL);
 }
 
