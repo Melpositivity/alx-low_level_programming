@@ -1,22 +1,22 @@
 #include "main.h"
 
 /**
- * _strcat - concatenates  the string pointed to by @src to
- * the end of the string pointed to by @dest
- * @dest: String that will be appended
- * @src: String to be concatenated upon
- *
- * Return: returns poiner to @dest
+ * _memset - fills memory with a constant byte
+ * @s: the address of memory to print
+ * @b: the byte to write
+ * @n: the number of spaces to write
+ * Return: Returns value to memory area S
  */
-char *_strcat(char *dest, char *src)
+
+char *_memset(char *s, char b, unsigned int n)
 {
-	int index = 0, dest_len = 0;
+	int index;
 
-	while (dest[index++])
-		dest_len++;
-
-	for (index = 0; src[index]; index++)
-		dest[dest_len++] = src[index];
-
-	return (dest);
+	for (index = 0; n > 0; n--)
+	{
+		*(s + index) = (b + 0);
+		index++;
+	}
+	return (s);
 }
+
