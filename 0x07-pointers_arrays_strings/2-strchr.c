@@ -13,7 +13,6 @@ char *_strchr(char *s, char c)
 {
 	int index;
 
-
 	for (index = 0; s[index] || s[index] == '\0'; index++)
 
 		{
