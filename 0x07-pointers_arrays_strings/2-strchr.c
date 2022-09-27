@@ -1,26 +1,24 @@
 #include "main.h"
-#include <stdlib.h>
 
 /**
- *  _strchr - locates character in a string
+ *  _strchr - locates a character in a string
+ *  @s: string to check
+ *  @c: character to check for
  *
- *  @s: the byte to write
- *  @c: the objective to locate
- *  Return: Returns pointer
+ *  Return: pointer to spot in s with c or null
  */
-
 char *_strchr(char *s, char c)
 {
-	int index;
+	int i;
 
-	for (index = 0; s[index] || s[index] == '\0'; index++)
-
-		{
-			if (s[index] == c)
-				return (&s[index]);
-			else if (s[index] == '\0')
-				break;
-		}
-	return (NULL);
+	for (i = 0; *(s + i); i++)
+	{
+		if (*(s + i) == c)
+			return (s + i);
+	}
+	if (*(s + i) == c)
+		return (s + i);
+	return (0);
 }
+
 
