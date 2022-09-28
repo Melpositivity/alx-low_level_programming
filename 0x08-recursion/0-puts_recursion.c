@@ -1,15 +1,13 @@
 #include "main.h"
 
 /**
- * _print_rev_recursion - prints inverse strings
- * @s: the string
- * Return: no returns
+ * _puts_recursion - copies a string
+ * @s:String
  */
 
-void _print_rev_recursion(char *s)
+void _puts_recursion(char *s)
 {
 	if (*s != '\0')
-
 	{
 		_putchar(*s);
 		_puts_recursion(s + 1);
@@ -19,4 +17,6 @@ void _print_rev_recursion(char *s)
 		_putchar('\n');
 	}
 }
+
+
 
