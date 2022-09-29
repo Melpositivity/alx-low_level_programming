@@ -6,6 +6,7 @@
  * @n: INput
  * Return: value of stringlength
  */
+
 int factorial(int n)
 {
 	if (n < 0)
