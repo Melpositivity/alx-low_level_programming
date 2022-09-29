@@ -1,5 +1,4 @@
-#ifndef MAIN_H
-#define MAIN-H
+#include "main.h"
 
 /**
  * _puts_recursion - copies a string
