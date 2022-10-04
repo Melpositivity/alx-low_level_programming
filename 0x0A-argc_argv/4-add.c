@@ -13,22 +13,27 @@
 
 int main(int argc, char *argv[])
 {
-	int i, j, add = 0;
+	int a = 0, i, j;
 
 	for (i = 1; i < argc; i++)
 	{
-		for (j = 0; argv[i][j] != '\0'; j++)
+		for (j = 0; argv[i][j]; j++)
 		{
-			if (!isdigit(argv[i][j]))
+			if (isdigit(argv[i][j]) == 0)
 			{
-				printf("Error\n");
+				puts("Error");
 				return (1);
 			}
 		}
-		add += atoi(argv[i]);
 	}
-	printf("%d\n", add);
+	for (i = 1; i < argc; i++)
+	{
+		a += atoi(argv[i]);
+	}
+	printf("%d\n", a);
 	return (0);
 }
+
+	
 
  
