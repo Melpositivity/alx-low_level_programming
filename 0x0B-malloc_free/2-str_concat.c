@@ -25,9 +25,11 @@ char *str_concat(char *s1, char *s2)
 	if (s2 == NULL)
 		s2 = "";
 
-	for (length_S1 = 0; s1[length_S1] != '\0'; length_S1++);
+	for (length_S1 = 0; s1[length_S1] != '\0'; length_S1++)
+		;
 
-	for (length_S2 = 0; s2[length_S2] != '\0'; length_S2++);
+	for (length_S2 = 0; s2[length_S2] != '\0'; length_S2++)
+		;
 
 	length_c = length_S1 + length_S2;
 
