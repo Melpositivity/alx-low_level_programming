@@ -10,12 +10,11 @@
  */
 
 void *malloc_checked(unsigned int b)
-
 {
-	char *i;
+	void *space;
 
-	i = malloc(b);
-	if (i == NULL)
+	space = malloc(b);
+	if (space == NULL)
 		exit(98);
-	return (i);
+	return (space);
 }
