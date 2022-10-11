@@ -2,15 +2,17 @@
 #include "dog.h"
 
 /**
- * free_dog - free memory *@d: array * Description: Free memory for struct
+ * free_dog - Purge dogs from memory
+ * @d: the objective
+ * Return: none
  */
 
 void free_dog(dog_t *d)
 {
-	if (d)
+	if (d != NULL)
 	{
-		free(d->name);
-		free(d->owner);
+		free((*d).name);
+		free((*d).owner);
 		free(d);
 	}
 }
