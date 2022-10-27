@@ -33,10 +33,10 @@ listint_t *find_listint_loop(listint_t *head)
 					break;
 
 				head = head->next;
-
 			}
 		return (p2->next);
 		}
 	}
+
 	return (NULL);
 }	
